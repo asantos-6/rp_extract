@@ -62,7 +62,10 @@ def wav_read(filename,normalize=True,verbose=True,auto_resample=True):
     if not os.path.exists(filename):
         raise NameError("File does not exist: " + filename)
 
-    samplerate, samplewidth, wavedata = wavio.read(filename)
+    wav = wavio.read(filename)
+    samplerate = wav.rate
+    samplewidth = wav.sampwidth
+    wavedata = wav.data
 
     if auto_resample and samplerate != 11025 and samplerate != 22050 and samplerate != 44100:
         #print original file info
