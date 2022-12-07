@@ -74,7 +74,10 @@ def wav_read(filename,normalize=True,verbose=True,auto_resample=True):
 
         to_samplerate = 22050 if samplerate < 22050 else 44100
         filename2 = resample(filename, to_samplerate, normalize=True, verbose=verbose)
-        samplerate, samplewidth, wavedata = wavio.read(filename2)
+        wav = wavio.read(filename2)
+        samplerate = wav.rate
+        samplewidth = wav.sampwidth
+        wavedata = wav.data
         os.remove(filename2) # delete temp file
 
     if (normalize):
