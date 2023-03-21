@@ -1,10 +1,10 @@
 # from http://peterdowns.com/posts/first-time-with-pypi.html
 
-from distutils.core import setup
+from setuptools import find_packages, setup
 
 setup(
-  name = 'rp_extract',
-  packages = ['rp_extract'], # this must be the same as the name above
+  name = 'rpextract',
+  packages = find_packages(),
   version = '0.1',
   description = 'Rhythm Pattern Audio Feature Extractor for Music Similarity, Music Classification and Music Recommendation',
   author = 'Thomas Lidy and Alexander Schindler',
