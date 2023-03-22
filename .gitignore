@@ -1,3 +1,16 @@
 /.pydevproject
 *.pyc
 /.idea/
+build/lib/rp_extract/classes_io.py
+build/lib/rp_extract/Logger.py
+build/lib/rp_extract/rp_classify.py
+build/lib/rp_extract/rp_extract.py
+build/lib/rp_extract/rp_extract_batch.py
+build/lib/rp_extract/rp_feature_io.py
+build/lib/rp_extract/rp_plot.py
+build/lib/rp_extract/__init__.py
+build/lib/rp_extract/audiofile_read.py
+rp_extract.egg-info/dependency_links.txt
+rp_extract.egg-info/PKG-INFO
+rp_extract.egg-info/SOURCES.txt
+rp_extract.egg-info/top_level.txt
